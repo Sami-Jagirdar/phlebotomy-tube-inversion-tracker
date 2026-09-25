@@ -1,0 +1,301 @@
+video_id,rel_path,folder,tube_label,fill_level,count,count_bin,fps,n_frames,duration_s,width,height,orientation,split
+181,LiH 3 ml (one third)/181_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,29.023,183,6.31,1920,1080,,test
+182,LiH 3 ml (one third)/182_4.mp4,LiH 3 ml (one third),LiH 3 ml,one third,4,low,29.19,206,7.06,1920,1080,,test
+183,LiH 3 ml (one third)/183_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.546,391,13.23,1920,1080,,kp_train
+184,LiH 3 ml (one third)/184_0.mp4,LiH 3 ml (one third),LiH 3 ml,one third,0,low,26.843,49,1.83,1920,1080,,dev
+185,LiH 3 ml (one third)/185_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.401,287,9.76,1920,1080,,kp_train
+186,LiH 3 ml (one third)/186_8.mp4,LiH 3 ml (one third),LiH 3 ml,one third,8,mid,29.378,291,9.91,1920,1080,,test
+187,LiH 3 ml (one third)/187_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,28.837,156,5.41,1920,1080,,test
+188,LiH 3 ml (one third)/188_4.mp4,LiH 3 ml (one third),LiH 3 ml,one third,4,low,29.171,197,6.75,1920,1080,,test
+189,LiH 3 ml (one third)/189_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.252,235,8.03,1920,1080,,test
+190,LiH 3 ml (one third)/190_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.264,229,7.83,1920,1080,,dev
+191,LiH 3 ml (one third)/191_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.539,372,12.59,1920,1080,,kp_train
+192,LiH 3 ml (one third)/192_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.424,323,10.98,1920,1080,,test
+193,LiH 3 ml (one third)/193_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,28.978,160,5.52,1920,1080,,kp_val
+194,LiH 3 ml (one third)/194_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.435,317,10.77,1920,1080,,dev
+195,LiH 3 ml (one third)/195_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,28.991,161,5.55,1920,1080,,dev
+196,LiH 3 ml (one third)/196_2.mp4,LiH 3 ml (one third),LiH 3 ml,one third,2,low,28.609,125,4.37,1920,1080,,test
+197,LiH 3 ml (one third)/197_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.466,331,11.23,1920,1080,,test
+198,LiH 3 ml (one third)/198_8.mp4,LiH 3 ml (one third),LiH 3 ml,one third,8,mid,29.431,300,10.19,1920,1080,,test
+199,LiH 3 ml (one third)/199_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.274,245,8.37,1920,1080,,dev
+200,LiH 3 ml (one third)/200_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.463,388,13.17,1920,1080,,test
+201,LiH 3 ml (one third)/201_12.mp4,LiH 3 ml (one third),LiH 3 ml,one third,12,high,29.587,419,14.16,1920,1080,,test
+202,LiH 3 ml (one third)/202_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.357,365,12.43,1920,1080,,test
+203,LiH 3 ml (one third)/203_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,28.449,102,3.59,1920,1080,,test
+204,LiH 3 ml (one third)/204_0.mp4,LiH 3 ml (one third),LiH 3 ml,one third,0,low,27.049,55,2.03,1920,1080,,test
+205,LiH 3 ml (one third)/205_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.561,386,13.06,1920,1080,,test
+206,LiH 3 ml (one third)/206_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.49,361,12.24,1920,1080,,test
+207,LiH 3 ml (one third)/207_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.288,247,8.43,1920,1080,,test
+208,LiH 3 ml (one third)/208_8.mp4,LiH 3 ml (one third),LiH 3 ml,one third,8,mid,29.43,308,10.47,1920,1080,,kp_train
+209,LiH 3 ml (one third)/209_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,28.144,91,3.23,1920,1080,,kp_train
+210,LiH 3 ml (one third)/210_7.mp4,LiH 3 ml (one third),LiH 3 ml,one third,7,mid,29.32,259,8.83,1920,1080,,test
+211,LiH 3 ml (one third)/211_0.mp4,LiH 3 ml (one third),LiH 3 ml,one third,0,low,26.332,51,1.94,1920,1080,,test
+212,LiH 3 ml (one third)/212_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.354,318,10.83,1920,1080,,test
+213,LiH 3 ml (one third)/213_6.mp4,LiH 3 ml (one third),LiH 3 ml,one third,6,mid,29.369,274,9.33,1920,1080,,kp_val
+214,LiH 3 ml (one third)/214_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,28.951,164,5.66,1920,1080,,test
+215,LiH 3 ml (one third)/215_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.571,476,16.1,1920,1080,,test
+216,LiH 3 ml (one third)/216_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,27.921,80,2.87,1920,1080,,test
+217,LiH 3 ml (one third)/217_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,28.144,91,3.23,1920,1080,,test
+218,LiH 3 ml (one third)/218_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.613,462,15.6,1920,1080,,dev
+219,LiH 3 ml (one third)/219_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,27.258,72,2.64,1920,1080,,dev
+220,LiH 3 ml (one third)/220_8.mp4,LiH 3 ml (one third),LiH 3 ml,one third,8,mid,29.522,351,11.89,1920,1080,,test
+221,LiH 3 ml (one third)/221_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,29.01,169,5.83,1920,1080,,test
+222,LiH 3 ml (one third)/222_4.mp4,LiH 3 ml (one third),LiH 3 ml,one third,4,low,29.14,194,6.66,1920,1080,,kp_train
+223,LiH 3 ml (one third)/223_4.mp4,LiH 3 ml (one third),LiH 3 ml,one third,4,low,29.151,209,7.17,1920,1080,,test
+224,LiH 3 ml (one third)/224_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.602,441,14.9,1920,1080,,test
+225,LiH 3 ml (one third)/225_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.453,394,13.38,1920,1080,,test
+226,LiH 3 ml (one third)/226_4.mp4,LiH 3 ml (one third),LiH 3 ml,one third,4,low,29.247,227,7.76,1920,1080,,test
+227,LiH 3 ml (one third)/227_8.mp4,LiH 3 ml (one third),LiH 3 ml,one third,8,mid,29.93,398,13.3,1920,1080,,test
+228,LiH 3 ml (one third)/228_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.592,429,14.5,1920,1080,,test
+229,LiH 3 ml (one third)/229_1.mp4,LiH 3 ml (one third),LiH 3 ml,one third,1,low,28.445,112,3.94,1920,1080,,test
+230,LiH 3 ml (one third)/230_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.618,436,14.72,1920,1080,,kp_train
+231,LiH 3 ml (one third)/231_0.mp4,LiH 3 ml (one third),LiH 3 ml,one third,0,low,27.115,56,2.07,1920,1080,,kp_train
+232,LiH 3 ml (one third)/232_7.mp4,LiH 3 ml (one third),LiH 3 ml,one third,7,mid,29.431,308,10.47,1920,1080,,test
+233,LiH 3 ml (one third)/233_11.mp4,LiH 3 ml (one third),LiH 3 ml,one third,11,high,29.589,464,15.68,1920,1080,,dev
+234,LiH 3 ml (one third)/234_3.mp4,LiH 3 ml (one third),LiH 3 ml,one third,3,low,29.121,199,6.83,1920,1080,,test
+235,LiH 3 ml (one third)/235_10.mp4,LiH 3 ml (one third),LiH 3 ml,one third,10,high,29.602,450,15.2,1920,1080,,kp_train
+236,LiH 3 ml (one third)/236_12.mp4,LiH 3 ml (one third),LiH 3 ml,one third,12,high,29.66,523,17.63,1920,1080,,test
+237,LiH 3 ml (one third)/237_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.565,413,13.97,1920,1080,,test
+238,LiH 3 ml (one third)/238_5.mp4,LiH 3 ml (one third),LiH 3 ml,one third,5,mid,29.307,257,8.77,1920,1080,,test
+239,LiH 3 ml (one third)/239_9.mp4,LiH 3 ml (one third),LiH 3 ml,one third,9,high,29.568,431,14.58,1920,1080,,test
+240,LiH 3 ml (one third)/240_2.mp4,LiH 3 ml (one third),LiH 3 ml,one third,2,low,28.589,124,4.34,1920,1080,,kp_train
+241,LiH 5.5 ml B (two thirds)/241_1.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,1,low,28.233,94,3.33,1920,1080,,test
+242,LiH 5.5 ml B (two thirds)/242_9.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,9,high,29.603,450,15.2,1920,1080,,kp_train
+243,LiH 5.5 ml B (two thirds)/243_8.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,8,mid,29.577,425,14.37,1920,1080,,kp_train
+244,LiH 5.5 ml B (two thirds)/244_6.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,6,mid,29.501,355,12.03,1920,1080,,test
+245,LiH 5.5 ml B (two thirds)/245_9.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,9,high,29.599,440,14.87,1920,1080,,kp_train
+246,LiH 5.5 ml B (two thirds)/246_6.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,6,mid,29.425,307,10.43,1920,1080,,kp_train
+247,LiH 5.5 ml B (two thirds)/247_2.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,2,low,28.921,162,5.6,1920,1080,,test
+248,LiH 5.5 ml B (two thirds)/248_7.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,7,mid,29.457,313,10.63,1920,1080,,test
+249,LiH 5.5 ml B (two thirds)/249_2.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,2,low,28.396,130,4.58,1920,1080,,test
+250,LiH 5.5 ml B (two thirds)/250_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.289,247,8.43,1920,1080,,test
+251,LiH 5.5 ml B (two thirds)/251_4.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,4,low,29.224,217,7.43,1920,1080,,test
+252,LiH 5.5 ml B (two thirds)/252_4.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,4,low,29.188,213,7.3,1920,1080,,test
+253,LiH 5.5 ml B (two thirds)/253_8.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,8,mid,29.477,350,11.87,1920,1080,,test
+254,LiH 5.5 ml B (two thirds)/254_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.273,245,8.37,1920,1080,,test
+255,LiH 5.5 ml B (two thirds)/255_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.639,479,16.16,1920,1080,,test
+256,LiH 5.5 ml B (two thirds)/256_11.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,11,high,29.61,452,15.27,1920,1080,,dev
+257,LiH 5.5 ml B (two thirds)/257_11.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,11,high,29.616,472,15.94,1920,1080,,dev
+258,LiH 5.5 ml B (two thirds)/258_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,28.746,167,5.81,1920,1080,,kp_train
+259,LiH 5.5 ml B (two thirds)/259_1.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,1,low,28.549,122,4.27,1920,1080,,dev
+260,LiH 5.5 ml B (two thirds)/260_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.011,182,6.27,1920,1080,,test
+261,LiH 5.5 ml B (two thirds)/261_0.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,0,low,27.048,55,2.03,1920,1080,,dev
+262,LiH 5.5 ml B (two thirds)/262_11.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,11,high,29.571,441,14.91,1920,1080,,test
+263,LiH 5.5 ml B (two thirds)/263_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.289,247,8.43,1920,1080,,kp_val
+264,LiH 5.5 ml B (two thirds)/264_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.034,184,6.34,1920,1080,,test
+265,LiH 5.5 ml B (two thirds)/265_8.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,8,mid,29.572,406,13.73,1920,1080,,test
+266,LiH 5.5 ml B (two thirds)/266_4.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,4,low,29.277,238,8.13,1920,1080,,test
+267,LiH 5.5 ml B (two thirds)/267_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.276,238,8.13,1920,1080,,test
+268,LiH 5.5 ml B (two thirds)/268_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.098,190,6.53,1920,1080,,test
+269,LiH 5.5 ml B (two thirds)/269_7.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,7,mid,29.523,368,12.46,1920,1080,,kp_train
+270,LiH 5.5 ml B (two thirds)/270_10.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,10,high,29.574,433,14.64,1920,1080,,test
+271,LiH 5.5 ml B (two thirds)/271_2.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,2,low,28.988,180,6.21,1920,1080,,test
+272,LiH 5.5 ml B (two thirds)/272_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.606,460,15.54,1920,1080,,test
+273,LiH 5.5 ml B (two thirds)/273_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.341,262,8.93,1920,1080,,test
+274,LiH 5.5 ml B (two thirds)/274_11.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,11,high,29.802,896,30.07,1920,1080,,test
+275,LiH 5.5 ml B (two thirds)/275_10.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,10,high,29.698,594,20.0,1920,1080,,test
+276,LiH 5.5 ml B (two thirds)/276_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.51,357,12.1,1920,1080,,test
+277,LiH 5.5 ml B (two thirds)/277_2.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,2,low,28.951,158,5.46,1920,1080,,kp_val
+278,LiH 5.5 ml B (two thirds)/278_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.748,704,23.67,1920,1080,,test
+279,LiH 5.5 ml B (two thirds)/279_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.489,344,11.67,1920,1080,,dev
+280,LiH 5.5 ml B (two thirds)/280_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.464,339,11.51,1920,1080,,test
+281,LiH 5.5 ml B (two thirds)/281_9.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,9,high,29.676,557,18.77,1920,1080,,test
+282,LiH 5.5 ml B (two thirds)/282_10.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,10,high,29.743,662,22.26,1920,1080,,test
+283,LiH 5.5 ml B (two thirds)/283_9.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,9,high,29.714,610,20.53,1920,1080,,test
+284,LiH 5.5 ml B (two thirds)/284_10.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,10,high,29.648,593,20.0,1920,1080,,test
+285,LiH 5.5 ml B (two thirds)/285_10.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,10,high,29.706,597,20.1,1920,1080,,test
+286,LiH 5.5 ml B (two thirds)/286_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.75,705,23.7,1920,1080,,kp_train
+287,LiH 5.5 ml B (two thirds)/287_4.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,4,low,29.447,319,10.83,1920,1080,,kp_train
+288,LiH 5.5 ml B (two thirds)/288_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.701,739,24.88,1920,1080,,dev
+289,LiH 5.5 ml B (two thirds)/289_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.556,376,12.72,1920,1080,,dev
+290,LiH 5.5 ml B (two thirds)/290_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.511,671,22.74,1920,1080,,kp_train
+291,LiH 5.5 ml B (two thirds)/291_2.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,2,low,28.797,165,5.73,1920,1080,,dev
+292,LiH 5.5 ml B (two thirds)/292_6.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,6,mid,29.533,465,15.75,1920,1080,,test
+293,LiH 5.5 ml B (two thirds)/293_12.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,12,high,29.708,829,27.91,1920,1080,,test
+294,LiH 5.5 ml B (two thirds)/294_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.475,333,11.3,1920,1080,,test
+295,LiH 5.5 ml B (two thirds)/295_1.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,1,low,28.195,111,3.94,1920,1080,,test
+296,LiH 5.5 ml B (two thirds)/296_8.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,8,mid,29.688,571,19.23,1920,1080,,test
+297,LiH 5.5 ml B (two thirds)/297_6.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,6,mid,29.609,443,14.96,1920,1080,,test
+298,LiH 5.5 ml B (two thirds)/298_3.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,3,low,29.323,267,9.11,1920,1080,,kp_train
+299,LiH 5.5 ml B (two thirds)/299_11.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,11,high,29.775,788,26.47,1920,1080,,test
+300,LiH 5.5 ml B (two thirds)/300_5.mp4,LiH 5.5 ml B (two thirds),LiH 5.5 ml B,two thirds,5,mid,29.514,375,12.71,1920,1080,,test
+1,LiH 5.5 ml Barricor (one third)/1_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.162,224,7.68,1920,1080,,dev
+2,LiH 5.5 ml Barricor (one third)/2_8.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,8,mid,29.314,243,8.29,1920,1080,,test
+3,LiH 5.5 ml Barricor (one third)/3_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.081,195,6.71,1920,1080,,kp_train
+4,LiH 5.5 ml Barricor (one third)/4_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.17,211,7.23,1920,1080,,test
+5,LiH 5.5 ml Barricor (one third)/5_3.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,3,low,28.512,115,4.03,1920,1080,,test
+6,LiH 5.5 ml Barricor (one third)/6_9.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,9,high,29.369,344,11.71,1920,1080,,test
+7,LiH 5.5 ml Barricor (one third)/7_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.761,76,2.74,1920,1080,,dev
+8,LiH 5.5 ml Barricor (one third)/8_4.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,4,low,28.866,164,5.68,1920,1080,,dev
+9,LiH 5.5 ml Barricor (one third)/9_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.122,199,6.83,1920,1080,,test
+10,LiH 5.5 ml Barricor (one third)/10_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.38,64,2.34,1920,1080,,test
+11,LiH 5.5 ml Barricor (one third)/11_8.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,8,mid,29.229,232,7.94,1920,1080,,kp_train
+12,LiH 5.5 ml Barricor (one third)/12_12.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,12,high,29.483,351,11.91,1920,1080,,kp_train
+13,LiH 5.5 ml Barricor (one third)/13_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.11,184,6.32,1920,1080,,dev
+14,LiH 5.5 ml Barricor (one third)/14_0.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,0,low,27.487,66,2.4,1920,1080,,test
+15,LiH 5.5 ml Barricor (one third)/15_10.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,10,high,29.413,305,10.37,1920,1080,,kp_train
+16,LiH 5.5 ml Barricor (one third)/16_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.763,76,2.74,1920,1080,,test
+17,LiH 5.5 ml Barricor (one third)/17_11.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,11,high,29.481,334,11.33,1920,1080,,test
+18,LiH 5.5 ml Barricor (one third)/18_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.121,192,6.59,1920,1080,,kp_train
+19,LiH 5.5 ml Barricor (one third)/19_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.6,72,2.61,1920,1080,,test
+20,LiH 5.5 ml Barricor (one third)/20_11.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,11,high,29.493,328,11.12,1920,1080,,test
+21,LiH 5.5 ml Barricor (one third)/21_8.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,8,mid,29.289,247,8.43,1920,1080,,dev
+22,LiH 5.5 ml Barricor (one third)/22_0.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,0,low,27.547,71,2.58,1920,1080,,kp_train
+23,LiH 5.5 ml Barricor (one third)/23_11.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,11,high,29.475,341,11.57,1920,1080,,test
+24,LiH 5.5 ml Barricor (one third)/24_6.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,6,mid,29.214,230,7.87,1920,1080,,test
+25,LiH 5.5 ml Barricor (one third)/25_2.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,2,low,28.029,83,2.96,1920,1080,,test
+26,LiH 5.5 ml Barricor (one third)/26_3.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,3,low,28.62,131,4.58,1920,1080,,test
+27,LiH 5.5 ml Barricor (one third)/27_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.231,225,7.7,1920,1080,,test
+28,LiH 5.5 ml Barricor (one third)/28_3.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,3,low,28.539,111,3.89,1920,1080,,test
+29,LiH 5.5 ml Barricor (one third)/29_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.246,227,7.76,1920,1080,,kp_val
+30,LiH 5.5 ml Barricor (one third)/30_11.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,11,high,29.502,338,11.46,1920,1080,,test
+31,LiH 5.5 ml Barricor (one third)/31_12.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,12,high,29.583,418,14.13,1920,1080,,test
+32,LiH 5.5 ml Barricor (one third)/32_2.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,2,low,28.809,148,5.14,1920,1080,,test
+33,LiH 5.5 ml Barricor (one third)/33_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.556,376,12.72,1920,1080,,test
+34,LiH 5.5 ml Barricor (one third)/34_12.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,12,high,29.703,596,20.07,1920,1080,,test
+35,LiH 5.5 ml Barricor (one third)/35_3.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,3,low,30.041,175,5.83,1920,1080,,test
+36,LiH 5.5 ml Barricor (one third)/36_2.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,2,low,28.866,158,5.47,1920,1080,,kp_train
+37,LiH 5.5 ml Barricor (one third)/37_10.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,10,high,29.647,537,18.11,1920,1080,,kp_train
+38,LiH 5.5 ml Barricor (one third)/38_2.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,2,low,28.809,148,5.14,1920,1080,,dev
+39,LiH 5.5 ml Barricor (one third)/39_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,28.114,90,3.2,1920,1080,,test
+40,LiH 5.5 ml Barricor (one third)/40_11.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,11,high,29.692,563,18.96,1920,1080,,test
+41,LiH 5.5 ml Barricor (one third)/41_10.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,10,high,29.688,552,18.59,1920,1080,,test
+42,LiH 5.5 ml Barricor (one third)/42_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.547,391,13.23,1920,1080,,test
+43,LiH 5.5 ml Barricor (one third)/43_8.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,8,mid,29.632,477,16.1,1920,1080,,test
+44,LiH 5.5 ml Barricor (one third)/44_4.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,4,low,29.337,246,8.39,1920,1080,,kp_val
+45,LiH 5.5 ml Barricor (one third)/45_9.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,9,high,29.619,482,16.27,1920,1080,,dev
+46,LiH 5.5 ml Barricor (one third)/46_4.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,4,low,29.285,254,8.67,1920,1080,,kp_train
+47,LiH 5.5 ml Barricor (one third)/47_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.841,82,2.95,1920,1080,,test
+48,LiH 5.5 ml Barricor (one third)/48_9.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,9,high,29.65,501,16.9,1920,1080,,test
+49,LiH 5.5 ml Barricor (one third)/49_1.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,1,low,27.985,86,3.07,1920,1080,,test
+50,LiH 5.5 ml Barricor (one third)/50_12.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,12,high,29.671,527,17.76,1920,1080,,test
+51,LiH 5.5 ml Barricor (one third)/51_10.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,10,high,29.649,510,17.2,1920,1080,,test
+52,LiH 5.5 ml Barricor (one third)/52_7.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,7,mid,29.502,372,12.61,1920,1080,,test
+53,LiH 5.5 ml Barricor (one third)/53_9.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,9,high,29.538,449,15.2,1920,1080,,test
+54,LiH 5.5 ml Barricor (one third)/54_12.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,12,high,29.941,527,17.6,1920,1080,,dev
+55,LiH 5.5 ml Barricor (one third)/55_0.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,0,low,26.766,51,1.91,1920,1080,,test
+56,LiH 5.5 ml Barricor (one third)/56_2.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,2,low,28.763,145,5.04,1920,1080,,kp_train
+57,LiH 5.5 ml Barricor (one third)/57_5.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,5,mid,29.36,257,8.75,1920,1080,,test
+58,LiH 5.5 ml Barricor (one third)/58_5.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,5,mid,29.277,253,8.64,1920,1080,,test
+59,LiH 5.5 ml Barricor (one third)/59_8.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,8,mid,29.523,377,12.77,1920,1080,,test
+60,LiH 5.5 ml Barricor (one third)/60_3.mp4,LiH 5.5 ml Barricor (one third),LiH 5.5 ml Barricor,one third,3,low,29.068,187,6.43,1920,1080,,test
+61,M 4.0 ml (two thirds)/61_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.295,248,8.47,1920,1080,,test
+62,M 4.0 ml (two thirds)/62_4.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,4,low,29.864,173,5.79,1920,1080,,test
+63,M 4.0 ml (two thirds)/63_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,28.853,157,5.44,1920,1080,,test
+64,M 4.0 ml (two thirds)/64_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.513,383,12.98,1920,1080,,kp_train
+65,M 4.0 ml (two thirds)/65_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.625,484,16.34,1920,1080,,kp_val
+66,M 4.0 ml (two thirds)/66_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.777,140,4.87,1920,1080,,test
+67,M 4.0 ml (two thirds)/67_7.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,7,mid,29.488,352,11.94,1920,1080,,kp_train
+68,M 4.0 ml (two thirds)/68_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.589,124,4.34,1920,1080,,test
+69,M 4.0 ml (two thirds)/69_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.559,394,13.33,1920,1080,,test
+70,M 4.0 ml (two thirds)/70_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.599,485,16.39,1920,1080,,dev
+71,M 4.0 ml (two thirds)/71_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.347,286,9.75,1920,1080,,test
+72,M 4.0 ml (two thirds)/72_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,28.839,156,5.41,1920,1080,,test
+73,M 4.0 ml (two thirds)/73_11.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,11,high,29.566,501,16.95,1920,1080,,dev
+74,M 4.0 ml (two thirds)/74_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.441,310,10.53,1920,1080,,dev
+75,M 4.0 ml (two thirds)/75_7.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,7,mid,29.535,371,12.56,1920,1080,,test
+76,M 4.0 ml (two thirds)/76_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.357,272,9.27,1920,1080,,test
+77,M 4.0 ml (two thirds)/77_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.522,385,13.04,1920,1080,,test
+78,M 4.0 ml (two thirds)/78_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.376,275,9.36,1920,1080,,test
+79,M 4.0 ml (two thirds)/79_4.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,4,low,29.17,204,6.99,1920,1080,,test
+80,M 4.0 ml (two thirds)/80_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.58,417,14.1,1920,1080,,test
+81,M 4.0 ml (two thirds)/81_4.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,4,low,29.206,215,7.36,1920,1080,,test
+82,M 4.0 ml (two thirds)/82_1.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,1,low,28.115,90,3.2,1920,1080,,test
+83,M 4.0 ml (two thirds)/83_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.584,498,16.83,1920,1080,,kp_train
+84,M 4.0 ml (two thirds)/84_11.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,11,high,29.596,457,15.44,1920,1080,,test
+85,M 4.0 ml (two thirds)/85_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.377,283,9.63,1920,1080,,test
+86,M 4.0 ml (two thirds)/86_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.574,389,13.15,1920,1080,,kp_val
+87,M 4.0 ml (two thirds)/87_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,29.13,193,6.63,1920,1080,,test
+88,M 4.0 ml (two thirds)/88_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.633,468,15.79,1920,1080,,test
+89,M 4.0 ml (two thirds)/89_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.842,144,4.99,1920,1080,,kp_train
+90,M 4.0 ml (two thirds)/90_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.546,391,13.23,1920,1080,,test
+91,M 4.0 ml (two thirds)/91_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.534,116,4.07,1920,1080,,test
+92,M 4.0 ml (two thirds)/92_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.587,410,13.86,1920,1080,,test
+93,M 4.0 ml (two thirds)/93_4.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,4,low,29.082,195,6.71,1920,1080,,dev
+94,M 4.0 ml (two thirds)/94_0.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,0,low,27.516,63,2.29,1920,1080,,test
+95,M 4.0 ml (two thirds)/95_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.64,507,17.11,1920,1080,,test
+96,M 4.0 ml (two thirds)/96_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.64,507,17.11,1920,1080,,test
+97,M 4.0 ml (two thirds)/97_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,28.934,163,5.63,1920,1080,,dev
+98,M 4.0 ml (two thirds)/98_1.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,1,low,28.176,92,3.27,1920,1080,,test
+99,M 4.0 ml (two thirds)/99_5.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,5,mid,29.31,250,8.53,1920,1080,,test
+100,M 4.0 ml (two thirds)/100_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.521,419,14.19,1920,1080,,kp_train
+101,M 4.0 ml (two thirds)/101_12.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,12,high,29.663,543,18.31,1920,1080,,dev
+102,M 4.0 ml (two thirds)/102_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.839,150,5.2,1920,1080,,kp_train
+103,M 4.0 ml (two thirds)/103_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,28.863,188,6.51,1920,1080,,kp_train
+104,M 4.0 ml (two thirds)/104_5.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,5,mid,29.31,250,8.53,1920,1080,,kp_train
+105,M 4.0 ml (two thirds)/105_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.801,165,5.73,1920,1080,,test
+106,M 4.0 ml (two thirds)/106_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.541,381,12.9,1920,1080,,test
+107,M 4.0 ml (two thirds)/107_11.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,11,high,29.602,450,15.2,1920,1080,,test
+108,M 4.0 ml (two thirds)/108_4.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,4,low,29.144,208,7.14,1920,1080,,dev
+109,M 4.0 ml (two thirds)/109_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.559,429,14.51,1920,1080,,test
+110,M 4.0 ml (two thirds)/110_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,28.731,160,5.57,1920,1080,,test
+111,M 4.0 ml (two thirds)/111_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.623,483,16.3,1920,1080,,test
+112,M 4.0 ml (two thirds)/112_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,29.018,176,6.07,1920,1080,,kp_train
+113,M 4.0 ml (two thirds)/113_6.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,6,mid,29.476,333,11.3,1920,1080,,test
+114,M 4.0 ml (two thirds)/114_0.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,0,low,26.598,46,1.73,1920,1080,,test
+115,M 4.0 ml (two thirds)/115_9.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,9,high,29.941,470,15.7,1920,1080,,test
+116,M 4.0 ml (two thirds)/116_8.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,8,mid,29.555,402,13.6,1920,1080,,test
+117,M 4.0 ml (two thirds)/117_2.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,2,low,28.587,124,4.34,1920,1080,,kp_train
+118,M 4.0 ml (two thirds)/118_7.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,7,mid,29.474,341,11.57,1920,1080,,dev
+119,M 4.0 ml (two thirds)/119_3.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,3,low,29.17,197,6.75,1920,1080,,test
+120,M 4.0 ml (two thirds)/120_10.mp4,M 4.0 ml (two thirds),M 4.0 ml,two thirds,10,high,29.623,474,16.0,1920,1080,,test
+121,Sodium Citrate 2.7 ml (FULL)/121_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.435,317,10.77,1920,1080,,kp_train
+122,Sodium Citrate 2.7 ml (FULL)/122_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.414,305,10.37,1920,1080,,test
+123,Sodium Citrate 2.7 ml (FULL)/123_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.603,522,17.63,1920,1080,,kp_train
+124,Sodium Citrate 2.7 ml (FULL)/124_10.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,10,high,29.711,609,20.5,1920,1080,,kp_train
+125,Sodium Citrate 2.7 ml (FULL)/125_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.964,595,19.86,1920,1080,,kp_train
+126,Sodium Citrate 2.7 ml (FULL)/126_6.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,6,mid,29.633,468,15.79,1920,1080,,test
+127,Sodium Citrate 2.7 ml (FULL)/127_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,29.05,225,7.75,1920,1080,,test
+128,Sodium Citrate 2.7 ml (FULL)/128_5.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,5,mid,29.53,370,12.53,1920,1080,,dev
+129,Sodium Citrate 2.7 ml (FULL)/129_3.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,3,low,29.253,235,8.03,1920,1080,,test
+130,Sodium Citrate 2.7 ml (FULL)/130_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.725,615,20.69,1920,1080,,test
+131,Sodium Citrate 2.7 ml (FULL)/131_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.681,559,18.83,1920,1080,,test
+132,Sodium Citrate 2.7 ml (FULL)/132_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.719,622,20.93,1920,1080,,test
+133,Sodium Citrate 2.7 ml (FULL)/133_3.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,3,low,29.251,242,8.27,1920,1080,,test
+134,Sodium Citrate 2.7 ml (FULL)/134_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.713,610,20.53,1920,1080,,test
+135,Sodium Citrate 2.7 ml (FULL)/135_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.673,134,4.67,1920,1080,,test
+136,Sodium Citrate 2.7 ml (FULL)/136_0.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,0,low,27.888,75,2.69,1920,1080,,kp_train
+137,Sodium Citrate 2.7 ml (FULL)/137_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.898,148,5.12,1920,1080,,test
+138,Sodium Citrate 2.7 ml (FULL)/138_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.706,607,20.43,1920,1080,,kp_val
+139,Sodium Citrate 2.7 ml (FULL)/139_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.679,129,4.5,1920,1080,,dev
+140,Sodium Citrate 2.7 ml (FULL)/140_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.678,548,18.47,1920,1080,,test
+141,Sodium Citrate 2.7 ml (FULL)/141_3.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,3,low,29.329,260,8.87,1920,1080,,test
+142,Sodium Citrate 2.7 ml (FULL)/142_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.631,495,16.71,1920,1080,,test
+143,Sodium Citrate 2.7 ml (FULL)/143_11.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,11,high,29.768,754,25.33,1920,1080,,dev
+144,Sodium Citrate 2.7 ml (FULL)/144_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.718,631,21.23,1920,1080,,kp_train
+145,Sodium Citrate 2.7 ml (FULL)/145_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,29.02,183,6.31,1920,1080,,kp_train
+146,Sodium Citrate 2.7 ml (FULL)/146_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,29.022,183,6.31,1920,1080,,test
+147,Sodium Citrate 2.7 ml (FULL)/147_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,28.977,211,7.28,1920,1080,,test
+148,Sodium Citrate 2.7 ml (FULL)/148_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,29.213,230,7.87,1920,1080,,test
+149,Sodium Citrate 2.7 ml (FULL)/149_0.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,0,low,27.172,57,2.1,1920,1080,,test
+150,Sodium Citrate 2.7 ml (FULL)/150_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.61,452,15.27,1920,1080,,kp_train
+151,Sodium Citrate 2.7 ml (FULL)/151_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,28.695,152,5.3,1920,1080,,kp_train
+152,Sodium Citrate 2.7 ml (FULL)/152_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.296,101,3.57,1920,1080,,test
+153,Sodium Citrate 2.7 ml (FULL)/153_10.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,10,high,29.644,536,18.08,1920,1080,,test
+154,Sodium Citrate 2.7 ml (FULL)/154_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,30.026,455,15.15,1920,1080,,dev
+155,Sodium Citrate 2.7 ml (FULL)/155_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,28.775,140,4.87,1920,1080,,test
+156,Sodium Citrate 2.7 ml (FULL)/156_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.659,495,16.69,1920,1080,,dev
+157,Sodium Citrate 2.7 ml (FULL)/157_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,28.765,145,5.04,1920,1080,,test
+158,Sodium Citrate 2.7 ml (FULL)/158_12.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,12,high,29.748,694,23.33,1920,1080,,test
+159,Sodium Citrate 2.7 ml (FULL)/159_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.656,531,17.91,1920,1080,,test
+160,Sodium Citrate 2.7 ml (FULL)/160_2.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,2,low,29.05,192,6.61,1920,1080,,test
+161,Sodium Citrate 2.7 ml (FULL)/161_5.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,5,mid,29.489,344,11.67,1920,1080,,test
+162,Sodium Citrate 2.7 ml (FULL)/162_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,27.946,85,3.04,1920,1080,,test
+163,Sodium Citrate 2.7 ml (FULL)/163_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.423,106,3.73,1920,1080,,dev
+164,Sodium Citrate 2.7 ml (FULL)/164_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.558,429,14.51,1920,1080,,test
+165,Sodium Citrate 2.7 ml (FULL)/165_3.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,3,low,29.123,206,7.07,1920,1080,,test
+166,Sodium Citrate 2.7 ml (FULL)/166_12.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,12,high,29.776,789,26.5,1920,1080,,test
+167,Sodium Citrate 2.7 ml (FULL)/167_12.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,12,high,29.77,775,26.03,1920,1080,,test
+168,Sodium Citrate 2.7 ml (FULL)/168_0.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,0,low,27.465,62,2.26,1920,1080,,kp_val
+169,Sodium Citrate 2.7 ml (FULL)/169_5.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,5,mid,29.505,339,11.49,1920,1080,,test
+170,Sodium Citrate 2.7 ml (FULL)/170_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.632,468,15.79,1920,1080,,test
+171,Sodium Citrate 2.7 ml (FULL)/171_4.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,4,low,29.36,288,9.81,1920,1080,,dev
+172,Sodium Citrate 2.7 ml (FULL)/172_10.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,10,high,29.73,656,22.07,1920,1080,,test
+173,Sodium Citrate 2.7 ml (FULL)/173_4.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,4,low,29.402,295,10.03,1920,1080,,test
+174,Sodium Citrate 2.7 ml (FULL)/174_9.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,9,high,29.687,580,19.54,1920,1080,,test
+175,Sodium Citrate 2.7 ml (FULL)/175_1.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,1,low,28.049,88,3.14,1920,1080,,kp_train
+176,Sodium Citrate 2.7 ml (FULL)/176_8.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,8,mid,29.639,507,17.11,1920,1080,,test
+177,Sodium Citrate 2.7 ml (FULL)/177_11.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,11,high,29.792,818,27.46,1920,1080,,test
+178,Sodium Citrate 2.7 ml (FULL)/178_6.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,6,mid,29.588,428,14.47,1920,1080,,test
+179,Sodium Citrate 2.7 ml (FULL)/179_7.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,7,mid,29.682,531,17.89,1920,1080,,dev
+180,Sodium Citrate 2.7 ml (FULL)/180_11.mp4,Sodium Citrate 2.7 ml (FULL),Sodium Citrate 2.7 ml,FULL,11,high,29.707,742,24.98,1920,1080,,test

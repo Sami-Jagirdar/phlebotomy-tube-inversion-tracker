@@ -1,0 +1,5 @@
+video_root: C:/Users/Sami/projects/rainleaf/alberta-hil/Phlebotomy Videos 
+
+splits_dir: splits
+data_dir: data 
+outputs_dir: outputs
