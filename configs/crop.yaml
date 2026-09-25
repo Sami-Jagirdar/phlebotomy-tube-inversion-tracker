@@ -1,0 +1,9 @@
+# Fixed crop box in original-frame pixels (made by tools/select_crop.py).
+# Keypoint labels are in crop coordinates: changing this invalidates existing labels.
+source_size:
+- 1920
+- 1080
+x: 371
+y: 0
+w: 1334
+h: 1080
