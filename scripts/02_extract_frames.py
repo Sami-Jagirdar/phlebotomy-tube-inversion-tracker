@@ -16,8 +16,8 @@ import time
 import pandas as pd
 
 from inversion_tracker.config import load_paths
-from inversion_tracker.data.frames import extract_video
-from inversion_tracker.data.index import load_index
+from inversion_tracker.data_preprocessing.frames import extract_video
+from inversion_tracker.data_preprocessing.index import load_index
 from inversion_tracker.video import load_crop, video_path
 
 
