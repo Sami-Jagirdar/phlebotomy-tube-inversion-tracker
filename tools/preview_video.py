@@ -4,8 +4,6 @@ Frames are cropped exactly as in training. Drawn per frame: the best detection's
 cap (red) and base (blue) with a base->cap arrow, plus frame index, time and confidences.
 A keypoint with confidence below --kpt-conf is drawn as a ring instead of a filled dot.
 
-Test videos are refused -- the test split is only touched once, in stage 07.
-
 Usage:
     uv run tools/preview_video.py                     # random kp_val video
     uv run tools/preview_video.py 64
