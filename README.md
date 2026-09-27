@@ -8,10 +8,11 @@ Counts blood-collection-tube inversions (and their speed) from video: a pose mod
 |---|---|---|---|
 | 01 Index + frozen split | `scripts/01_build_index.py` | `splits/video_index.csv` | done |
 | Crop box (one-time tool) | `tools/select_crop.py` | `configs/crop.yaml` | done |
-| 02 Frame extraction | `scripts/02_extract_frames.py` | `data/frames/round1/` (460 JPGs + `manifest.csv`) | done |
-| Keypoint labelling | CVAT (see [Annotation guide](#annotation-guide)) | `data/labels/round1/` | in progress |
-| 03 Build YOLO dataset | `scripts/03_build_yolo_dataset.py` | `data/yolo_dataset/` | todo |
-| 04 Train pose model | `scripts/04_train.py` | `outputs/runs/` | todo |
+| 02 Frame extraction | `scripts/02_extract_frames.py` | `data/images/train/` (460 JPGs + `manifest.csv`) | done |
+| Keypoint labelling | CVAT (see [Annotation guide](#annotation-guide)) | `data/round1_labels/` | done |
+| 03 Build YOLO dataset | `scripts/03_build_yolo_dataset.py` | `data/yolo_dataset/` (383 train / 77 val) | done |
+| 04 Train pose model | `scripts/04_train.py` + `configs/train.yaml` | `outputs/runs/pose/r1_s_640/` | trained; keypoint eval todo |
+| Preview on a video | `tools/preview_video.py` | `outputs/previews/` | done |
 | 05 Inference → keypoints | `scripts/05_infer.py` | `data/keypoints/` | todo |
 | 06 Tune counter (dev) | `scripts/06_tune_counter.py` | `configs/counter.yaml` | todo |
 | 07 Evaluate (test, once) | `scripts/07_evaluate.py` | `outputs/reports/` | todo |
@@ -38,14 +39,21 @@ uv run python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_
 uv run scripts/01_build_index.py      # refuses to overwrite the frozen split unless --force
 uv run tools/select_crop.py           # draw boxes around where the tube reaches -> configs/crop.yaml
 uv run scripts/02_extract_frames.py   # motion-weighted crops of kp_train/kp_val videos
+# label in CVAT, export to data/round1_labels/
+uv run scripts/03_build_yolo_dataset.py   # padded boxes, train/val by video -> data/yolo_dataset/
+uv run scripts/04_train.py                # settings in configs/train.yaml; override with --model/--name/--epochs/--batch/--imgsz
+uv run tools/preview_video.py 64          # annotated preview of one non-test video (default: random kp_val)
 ```
 
 - Frames are addressed by their index in a **sequential** decode (`video.iter_frames`) and timed with real timestamps (`t_ms`) — the videos are variable-frame-rate, so never seek by frame number for anything tied to labels.
 - Keypoint labels are in **crop coordinates**. Changing `configs/crop.yaml` after labelling invalidates the labels.
+- Stage 03 rebuilds CVAT's boxes (tight box around the keypoints + 45 px padding, ±75 px around a single point) and writes outside (`v=0`) points as `0 0 0`. Overlays for a visual check go to `outputs/reports/label_check/`.
+- Stage 04 fine-tunes `yolo26s-pose.pt` at `imgsz=640` with 180° rotation and up/down + left/right flips (`flip_idx [0, 1]`: flips never swap cap and base). Anything that runs the model must apply the same crop first.
+- Ultralytics YOLO is **AGPL-3.0**, and so are weights fine-tuned from it.
 
 ## Annotation guide
 
-Self-contained instructions for whoever labels the frames. You only need the frames zip (the JPGs from `data/frames/round1/`) and CVAT — not this repo.
+Self-contained instructions for whoever labels the frames. You only need the frames zip (the JPGs from `data/images/train/`) and CVAT — not this repo.
 
 ### 1. Install and start CVAT (one time)
 
@@ -111,7 +119,7 @@ Label most blurred frames — the model needs them. If you are skipping more tha
 ### 5. Export and hand back
 
 1. **Menu → Export task dataset** → format **Ultralytics YOLO Pose 1.0**, **Save images: off**.
-2. Send back the zip (name it `round1_labels.zip`). It goes in `data/labels/round1/`.
+2. Send back the zip (name it `round1_labels.zip`). It goes in `data/round1_labels/`.
 3. Keep your own copy until it has been received.
 
 Expected contents: `data.yaml` with `kpt_shape: [2, 3]`, and one `.txt` per labelled image with a line `0 cx cy w h  x_cap y_cap v  x_base y_base v` (normalized 0–1; `v` = 2 visible, 1 occluded, 0 outside).
@@ -119,14 +127,16 @@ Expected contents: `data.yaml` with `kpt_shape: [2, 3]`, and one `.txt` per labe
 ## Layout
 
 ```
-configs/    paths.yaml, crop.yaml (+ dataset/train/counter settings to come)
+configs/    paths.yaml, crop.yaml, train.yaml (+ counter settings to come)
 splits/     video_index.csv — the frozen video split (committed)
 scripts/    numbered pipeline entry points, run in order
-tools/      one-off interactive tools (select_crop.py)
+tools/      standalone tools (select_crop.py, preview_video.py)
 src/inversion_tracker/
   config.py     paths from configs/, resolved against the repo root
   video.py      Crop, sequential frame reader with timestamps
-  data/         index.py (index + split), frames.py (frame selection/extraction)
+  data_preprocessing/
+                index.py (index + split), frames.py (frame selection/extraction),
+                yolo.py (CVAT export -> YOLO pose dataset)
 tests/      unit tests
 data/       generated frames, labels, keypoints (gitignored)
 outputs/    training runs, reports, demo videos (gitignored)
