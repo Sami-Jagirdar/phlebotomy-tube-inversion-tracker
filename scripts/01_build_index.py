@@ -9,7 +9,7 @@ import argparse
 import sys
 
 from inversion_tracker.config import load_paths
-from inversion_tracker.data.index import build_index, index_path, split_summary
+from inversion_tracker.data_preprocessing.index import build_index, index_path, split_summary
 
 
 def main():

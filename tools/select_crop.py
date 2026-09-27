@@ -21,7 +21,7 @@ import argparse
 import cv2
 import numpy as np
 
-from inversion_tracker.data.index import load_index
+from inversion_tracker.data_preprocessing.index import load_index
 from inversion_tracker.video import CROP_FILE, Crop, save_crop, video_path
 
 WIN = "select crop"
