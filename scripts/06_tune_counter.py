@@ -2,7 +2,8 @@
 
 Every combination in configs/counter_grid.yaml is scored against the file-name counts:
     exact    fraction of videos counted exactly right (the main score)
-    within05 fraction off by at most half an inversion (one flip)
+    within05 fraction whose unrounded count (counted flips / 2) is within 0.5 of the truth, 0.5 included
+             (e.g. truth 2 and 3 flips = 1.5 counts, even though floor predicts 1)
     within1  fraction off by at most one inversion
     mae      mean absolute error, in inversions (counts can be halves, e.g. 1.5)
     bias     mean (predicted - true); negative = undercounting
@@ -113,8 +114,10 @@ def main():
             flips = [detect_flips(*sig, T, dwell) if sig else np.empty(0) for sig in sigs]
             for (ei, edge), (ri, rounding) in product(edge_vals, round_vals):
                 cp = CounterParams(T=T, dwell_s=dwell, edge_pause_s=edge, rounding=rounding)
-                pred = np.array([count_from_flips(f, cp).count for f in flips])
-                row = {**{k: getattr(sp, k) for k in sig_keys}, **cp.to_dict(), **score(pred, truth)}
+                res = [count_from_flips(f, cp) for f in flips]
+                pred = np.array([r.count for r in res])
+                half = np.array([len(r.kept) / 2 for r in res])
+                row = {**{k: getattr(sp, k) for k in sig_keys}, **cp.to_dict(), **score(pred, truth, half)}
                 row["edge_pause_s"] = "off" if edge is None else edge
                 rows.append(row)
                 keys.append(sig_idx + (ti, di, ei, ri))
@@ -135,8 +138,10 @@ def main():
     base_res, best_res = run(kps, *BASELINE), run(kps, best_sp, best_cp)
     base_pred = np.array([r.count if r else 0 for r in base_res])
     best_pred = np.array([r.count if r else 0 for r in best_res])
+    base_half = np.array([len(r.kept) / 2 if r else 0 for r in base_res])
+    best_half = np.array([len(r.kept) / 2 if r else 0 for r in best_res])
     per_video = videos[["video_id", "folder", "count", "duration_s"]].assign(
-        baseline=base_pred, best=best_pred, best_err=best_pred - truth,
+        baseline=base_pred, best=best_pred, best_half=best_half, best_err=best_pred - truth,
         n_flips=[len(r.flips) if r else 0 for r in best_res],
         n_kept=[len(r.kept) if r else 0 for r in best_res],
         flip_times=[";".join(f"{x:.2f}" for x in r.flips) if r else "no signal" for r in best_res])
@@ -145,7 +150,7 @@ def main():
     fmt = {"exact": "{:.1%}".format, "within05": "{:.1%}".format, "within1": "{:.1%}".format,
            "robust": "{:.1%}".format,
            "mae": "{:.2f}".format, "bias": "{:+.2f}".format}
-    b = score(base_pred, truth)
+    b = score(base_pred, truth, base_half)
     print(f"\nBaseline (untuned): exact {b['exact']:.1%}, within05 {b['within05']:.1%}, within1 {b['within1']:.1%}, "
           f"mae {b['mae']:.2f}, bias {b['bias']:+.2f}")
     n_tied = (results["exact"] == results["exact"].iloc[0]).sum()
@@ -169,7 +174,7 @@ def main():
     print(f"\n-> {out_dir / 'grid_results.csv'}\n-> {out_dir / 'per_video.csv'}")
 
     if args.write:
-        s = score(best_pred, truth)
+        s = score(best_pred, truth, best_half)
         frozen = {
             "keypoints": args.keypoints,
             "tuned_on": {"splits": args.splits, "n_videos": len(videos), "date": date.today().isoformat()},

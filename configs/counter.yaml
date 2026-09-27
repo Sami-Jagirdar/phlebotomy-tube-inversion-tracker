@@ -20,7 +20,7 @@ counter:
   rounding: floor
 dev_score:
   exact: 0.675
-  within05: 0.675
+  within05: 0.95
   within1: 1.0
   mae: 0.325
   bias: -0.325
