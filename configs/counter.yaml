@@ -1,0 +1,26 @@
+# Frozen by scripts/06_tune_counter.py -- do not edit by hand.
+keypoints: r1_s_640
+tuned_on:
+  splits:
+  - dev
+  n_videos: 40
+  date: '2026-09-27'
+signal:
+  kpt_conf: 0.4
+  max_gap_s: 0.3
+  smooth_s: 0.35
+  polyorder: 2
+  l_ref_pct: 90
+  centre_pct: 5
+  start_s: 0.5
+counter:
+  T: 0.35
+  dwell_s: 0.0
+  edge_pause_s: 1.5
+  rounding: floor
+dev_score:
+  exact: 0.675
+  within05: 0.675
+  within1: 1.0
+  mae: 0.325
+  bias: -0.325

@@ -1,0 +1,14 @@
+# Search grid for scripts/06_tune_counter.py. Every combination is scored on the dev videos.
+# signal:  settings that change s(t) itself (recomputed per combination; see counting/signal.py)
+# counter: settings of the hysteresis counter (see counting/state_machine.py)
+
+signal:
+  kpt_conf: [0.3, 0.4, 0.5, 0.6, 0.7]
+  max_gap_s: [0.2, 0.3, 0.5]
+  smooth_s: [0.15, 0.25, 0.35]
+
+counter:
+  T: [0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6]
+  dwell_s: [0.0, 0.05, 0.1, 0.15, 0.2]
+  edge_pause_s: [null, 1.0, 1.5, 2.0, 3.0]   # null = keep every flip
+  rounding: [floor, ceil]   # floor = count only completed over-and-back inversions; none = flips / 2 as is (e.g. 1.5)
