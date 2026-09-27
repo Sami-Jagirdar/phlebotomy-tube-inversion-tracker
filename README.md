@@ -11,14 +11,30 @@ Counts blood-collection-tube inversions (and their speed) from video: a pose mod
 | 02 Frame extraction | `scripts/02_extract_frames.py` | `data/images/train/` (460 JPGs + `manifest.csv`) | done |
 | Keypoint labelling | CVAT (see [Annotation guide](#annotation-guide)) | `data/round1_labels/` | done |
 | 03 Build YOLO dataset | `scripts/03_build_yolo_dataset.py` | `data/yolo_dataset/` (383 train / 77 val) | done |
-| 04 Train pose model | `scripts/04_train.py` + `configs/train.yaml` | `outputs/runs/pose/r1_s_640/` | trained; keypoint eval todo |
+| 04 Train pose model | `scripts/04_train.py` + `configs/train.yaml` | `outputs/runs/pose/r1_s_640/` | done (YOLO26s-pose, 640; keypoint-level eval skipped) |
 | Preview on a video | `tools/preview_video.py` | `outputs/previews/` | done |
-| 05 Inference → keypoints | `scripts/05_infer.py` | `data/keypoints/` | todo |
-| 06 Tune counter (dev) | `scripts/06_tune_counter.py` | `configs/counter.yaml` | todo |
-| 07 Evaluate (test, once) | `scripts/07_evaluate.py` | `outputs/reports/` | todo |
+| 05 Inference → keypoints | `scripts/05_infer.py` | `data/keypoints/r1_s_640/` (dev + test) | done |
+| 06a Signal plots | `scripts/06a_plot_signals.py` | `outputs/reports/signals/` | done |
+| 06 Tune counter (dev) | `scripts/06_tune_counter.py` + `configs/counter_grid.yaml` | `configs/counter.yaml` (frozen) | done |
+| 07 Evaluate (test) | `scripts/07_evaluate.py` | `outputs/reports/eval/r1_s_640/test/` | done |
 | 08 Demo video | `scripts/08_render_demo.py` | `outputs/demo/` | todo |
 
-**Dataset split** (per video, stratified by folder and count bin, seed 42): 50 `kp_train` / 10 `kp_val` videos are keypoint-labelled for training the pose model; 40 `dev` videos tune the counter; 200 `test` videos are used once for the final numbers.
+**Dataset split** (per video, stratified by folder and count bin, seed 42): 50 `kp_train` / 10 `kp_val` videos are keypoint-labelled for training the pose model; 40 `dev` videos tune the counter; 200 `test` videos are held out for the final numbers.
+
+## Results
+
+The frozen counter was scored against the file-name counts. The unrounded count is flips / 2, so "within 0.5" accepts e.g. 1.5 for a true count of 2.
+
+| Split | Videos | Exact | Within 0.5 | Within 1 | MAE | Bias |
+|---|---|---|---|---|---|---|
+| Dev (tuning) | 40 | 67.5% | 95.0% | 100% | 0.33 | −0.33 |
+| **Test** | **200** | **60.0%** | **90.0%** | **98.5%** | **0.41** | **−0.30** |
+
+- **Test errors:**
+  - 68 videos undercounted by 1 and 9 overcounted by 1;
+  - 2 undercounted by 2 and 1 overcounted by 2.
+- **Likely cause of the undercount:** the first inversion after pickup is often made towards the camera and barely registers in 2D.
+- **More detail:** per-folder and per-count tables, the confusion matrix and signal plots of every miss are in `outputs/reports/eval/r1_s_640/test/`.
 
 ## Setup
 
@@ -42,7 +58,12 @@ uv run scripts/02_extract_frames.py   # motion-weighted crops of kp_train/kp_val
 # label in CVAT, export to data/round1_labels/
 uv run scripts/03_build_yolo_dataset.py   # padded boxes, train/val by video -> data/yolo_dataset/
 uv run scripts/04_train.py                # settings in configs/train.yaml; override with --model/--name/--epochs/--batch/--imgsz
-uv run tools/preview_video.py 64          # annotated preview of one non-test video (default: random kp_val)
+uv run tools/preview_video.py 64          # annotated preview of one video (default: random kp_val)
+uv run scripts/05_infer.py                # keypoints for every frame of dev + test -> data/keypoints/<run>/
+uv run scripts/06a_plot_signals.py        # s(t) plots for 12 dev videos (--all for every one)
+uv run scripts/06_tune_counter.py --write # grid search on dev; freezes the best settings to configs/counter.yaml
+uv run scripts/07_evaluate.py --splits dev   # sanity check: reproduces dev_score
+uv run scripts/07_evaluate.py             # test; refuses to overwrite an existing evaluation without --force
 ```
 
 - Frames are addressed by their index in a **sequential** decode (`video.iter_frames`) and timed with real timestamps (`t_ms`) — the videos are variable-frame-rate, so never seek by frame number for anything tied to labels.
@@ -50,6 +71,21 @@ uv run tools/preview_video.py 64          # annotated preview of one non-test vi
 - Stage 03 rebuilds CVAT's boxes (tight box around the keypoints + 45 px padding, ±75 px around a single point) and writes outside (`v=0`) points as `0 0 0`. Overlays for a visual check go to `outputs/reports/label_check/`.
 - Stage 04 fine-tunes `yolo26s-pose.pt` at `imgsz=640` with 180° rotation and up/down + left/right flips (`flip_idx [0, 1]`: flips never swap cap and base). Anything that runs the model must apply the same crop first.
 - Ultralytics YOLO is **AGPL-3.0**, and so are weights fine-tuned from it.
+
+### How counting works (stages 05–07)
+
+1. **Keypoints (stage 05):** every frame is cropped and run through the model. Frames with no detection stay as NaN rows, so the time axis has no holes.
+2. **Signal (`counting/signal.py`):**
+   - **Clean:** frames where a keypoint is below the confidence cut-off are dropped, and gaps of 0.3 s or less are interpolated.
+   - **Vector:** `v = cap − base` for every frame.
+   - **Main swing direction:** `u` is the first principal component of `v` (PCA).
+   - **Signal:** `s = (v·u − centre) / L_ref`. The centre is the middle of the swing range, `L_ref` is the tube's full visible length, and + is the side the tube starts on.
+   - **Smooth:** Savitzky-Golay filter.
+3. **Counter (`counting/state_machine.py`):**
+   - A Schmitt trigger at ±T: each crossing to the opposite side is a flip.
+   - Optionally, an isolated first or last flip (pickup / put-down) is dropped.
+   - The count is flips / 2, rounded down, so only completed over-and-back inversions count.
+4. **Tuning (stage 06):** grid search over `configs/counter_grid.yaml` on dev. The winner is chosen by exact accuracy, then by its grid neighbours' average. It's frozen in `configs/counter.yaml`, and stage 07 reads only that file.
 
 ## Annotation guide
 
@@ -127,17 +163,19 @@ Expected contents: `data.yaml` with `kpt_shape: [2, 3]`, and one `.txt` per labe
 ## Layout
 
 ```
-configs/    paths.yaml, crop.yaml, train.yaml (+ counter settings to come)
+configs/    paths.yaml, crop.yaml, train.yaml, counter_grid.yaml, counter.yaml (frozen)
 splits/     video_index.csv — the frozen video split (committed)
 scripts/    numbered pipeline entry points, run in order
 tools/      standalone tools (select_crop.py, preview_video.py)
 src/inversion_tracker/
   config.py     paths from configs/, resolved against the repo root
   video.py      Crop, sequential frame reader with timestamps
+  inference.py  per-frame pose inference on a whole video
   data_preprocessing/
                 index.py (index + split), frames.py (frame selection/extraction),
                 yolo.py (CVAT export -> YOLO pose dataset)
-tests/      unit tests
+  counting/     signal.py (keypoints -> s(t)), state_machine.py (s(t) -> count),
+                metrics.py (scores), plots.py (signal diagnostic figure)
 data/       generated frames, labels, keypoints (gitignored)
 outputs/    training runs, reports, demo videos (gitignored)
 ```
