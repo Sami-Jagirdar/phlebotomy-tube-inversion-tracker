@@ -19,3 +19,14 @@ def load_paths() -> dict[str, Path]:
         p = Path(value)
         paths[key] = p if p.is_absolute() else REPO_ROOT / p
     return paths
+
+from pathlib import Path
+
+def find_repo_root(start: Path = Path(__file__)) -> Path:
+    for p in start.resolve().parents:
+        if (p / "pyproject.toml").exists() or (p / ".git").exists():
+            return p
+    raise FileNotFoundError("repo root not found")
+
+REPO_ROOT = find_repo_root()
+

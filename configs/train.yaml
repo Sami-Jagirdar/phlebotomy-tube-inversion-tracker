@@ -1,0 +1,24 @@
+model: yolo26s-pose.pt
+data: data/yolo_dataset/dataset.yaml
+project: outputs/runs/pose
+name: r1_s_640
+imgsz: 640
+epochs: 150
+patience: 30
+batch: 16
+seed: 42
+deterministic: true
+cache: ram # can store in ram since only 460 imgs
+workers: 4
+# augmentation
+degrees: 180
+flipud: 0.5
+fliplr: 0.5
+hsv_h: 0.015
+hsv_v: 0.4
+scale: 0.25
+mosaic: 1.0
+close_mosaic: 25
+
+
+
