@@ -13,3 +13,4 @@ wheels/
 data/
 outputs/
 *.mp4
+*.pt
