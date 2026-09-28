@@ -49,6 +49,7 @@ uv run python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_
 - `torch`/`torchvision` are pinned to the PyTorch **cu128** index in `pyproject.toml` (RTX 50-series needs CUDA ≥ 12.8). Keep that pin when adding packages that depend on torch.
 - Set the external video location in `configs/paths.yaml` (videos are not stored in the repo). Relative paths in that file resolve from the repo root.
 
+Note: Before running the pipeline, please check the paths.yaml config files in the /config directory. You may have to update the video_root value to the folder where your actual dataset exists. The video filenames must be of the format <video_id>_<inversion_count> 
 ## Running the pipeline
 
 ```powershell
